@@ -30,8 +30,9 @@ def build_model():
     outputs = Dense(7, activation='softmax')(x)
 
     model = Model(inputs, outputs)
-    model.load_weights("my_emotion_model_weights.h5")
-
+    #model.load_weights("my_emotion_model_weights.h5")
+    # Pre-trained model weights not included due to size limitations
+    # Uncomment the line below and provide the .h5 file to run the model
     return model
 
 model = build_model()
